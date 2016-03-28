@@ -1,4 +1,4 @@
-<ul class="list-unstyled">
+<!--<ul class="list-unstyled">
     {% for contact_detail in candidate.contact_details.all %}
         <li>
             <a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">
@@ -8,8 +8,26 @@
                 {% if contact_detail.contact_type == "FACEBOOK" %}
                     <i class="fa fa-facebook-official"></i>
                 {% endif %}
+                {% if contact_detail.contact_type == "URL" %}
+                    <i class="fa fa-globe"></i>
+                {% endif %}
                 {{contact_detail.label}}
             </a>
          </li>
+    {% endfor %}
+</ul>-->
+<ul class="list-unstyled">
+    {% for contact_detail in candidate.contact_details.all %}       
+            <a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">
+                {% if contact_detail.contact_type == "TWITTER" %}
+                    <li class="twitter">{{contact_detail.label}}</li>
+                {% endif %}
+                {% if contact_detail.contact_type == "FACEBOOK" %}
+                    <i class="fa fa-facebook-official"></i>{{contact_detail.label}}
+                {% endif %}
+                {% if contact_detail.contact_type == "URL" %}
+                    <li class="web">{{contact_detail.label}}</li>
+                {% endif %}                
+            </a>         
     {% endfor %}
 </ul>

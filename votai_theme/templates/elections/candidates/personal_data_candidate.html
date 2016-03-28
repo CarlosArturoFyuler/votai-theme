@@ -3,14 +3,14 @@
 {% if candidate.birth_date %}
 <tr>
     <td>
-        <span>{% trans 'Nacimiento' %}:</span> {{candidate.birth_date}}
+        <span class="profile-candidate-font">{% trans 'Nacimiento' %}:</span><span class="personal-data-font"> {{candidate.birth_date}}</span>
     </td>
 </tr>
 {% endif %}
 {% for personal_data in candidate.personal_datas.all %}
 <tr>
     <td>
-        <span>{{personal_data.label}}:</span> {{personal_data.value}}
+        <span class="profile-candidate-font">{{personal_data.label}}</span><span class="personal-data-font"> {{personal_data.value}}</span>
     </td>
 </tr>
 {% endfor %}

@@ -68,13 +68,13 @@ $(document).ready(function(){
 			</div>
 			<div class="panel-body">
 				{% for topic in category.topics.all %}
-				<div class="row fondo-gris">
+				<div class="row">
 					<div class="col-md-8">
 					<p class="question">{{topic.label}}</p>
 						<ul class="list-unstyled">
 							{% for position in topic.positions.all %}
 							<li>
-								<label for="answer-{{topic.id}}-{{position.id}}"><input name="answer-{{topic.id}}" value="{{position.id}}" id="answer-{{topic.id}}-{{position.id}}" type="radio"> {{position.label}}</label>
+								<label for="answer-{{topic.id}}-{{position.id}}" class="display-table2"><input name="answer-{{topic.id}}" value="{{position.id}}" id="answer-{{topic.id}}-{{position.id}}" type="radio" class="display-table3"> <span class="answer-option display-table3">{{position.label}}</span></label>
 							</li>
 							{% endfor %}
 						</ul>

@@ -21,7 +21,7 @@
 				{% endif %}
 				
 			<p class="text-center">
-				<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" class="lato-font-grey-candidatename">{{candidate.name}}</a>
+				<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" class="lato-font-grey-candidatename">{{candidate.given_name}} <br> {{candidate.family_name}}</a>
 					{% if not candidate.has_answered %}{% no_ha_respondido_twitter_button %}{% endif %}
 			</p>
 			</div>

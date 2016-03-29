@@ -278,6 +278,7 @@ strong {
 }
 .textbtn{
 	padding-left: 15px;
+	vertical-align: middle;
 }
 
 .btn-success {
@@ -804,6 +805,7 @@ input, button, select, textarea {
 	background: #14b9d5;
 	color: #fff;
 	border-radius: 6px;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 .porcentaje-similitud h3 {
@@ -821,6 +823,7 @@ input, button, select, textarea {
 	font-weight: 900;
 	position:relative;
 	font-size: 14px;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 .chosen-container-single .chosen-single:after {
@@ -828,6 +831,7 @@ input, button, select, textarea {
 	top: 11px;
 	content: "\f078";
 	font-family: FontAwesome;
+	/*font-family: 'Lato-bold', sans-serif;*/
 	font-weight: normal;
 	right: 15px;
 }
@@ -840,11 +844,13 @@ input, button, select, textarea {
 	border-bottom-left-radius: 0;
 	background: #323a45;
 	box-shadow: none;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 .chosen-container .chosen-results li.highlighted{
 	background: #ffd200;
 	color: inherit;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 .panel-default>.panel-heading {
@@ -853,18 +859,22 @@ input, button, select, textarea {
 	/*border-color: transparent;*/
 	/*font-family: 'Lato-bold', sans-serif;
 	font-size: 16px;*/
+	font-family: 'Lato-bold', sans-serif;
 }
 
 #compare-candidates .text-right, #compare-candidates .text-center {
 	color: #9fa7b4;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 #compare-candidates i {
 	color: #9fa7b4;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 #compare-candidates .text-center i {
 	color: #14b9d5;
+	font-family: 'Lato-bold', sans-serif;
 }
 
 #compare-candidates div.col-md-12:first-child {
@@ -898,11 +908,7 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 .position-absolute{
 	position: absolute;
 }
-/*ul.no_bullet{
-	list-style-type: none;
-	padding: 0;
-	margin:0;
-}*/
+
 .display-table{
 	min-height: 70px;
 	display: table;
@@ -911,14 +917,14 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 	display: table;
 	margin-bottom: 15px;
 }
-.display-table3{
+.display-tablecell{
 	display:table-cell;
 }
 .vertical-align{
 	vertical-align: middle;
 	display: table-cell;
 }
-li.twitter{
+li.contacttwitter{
 	background: url(../img/twit-icon.png) no-repeat left top;
 	height: 15.21px;
 	width: 16.95px;
@@ -926,13 +932,25 @@ li.twitter{
 	margin-bottom: 10px;
 	background-size: contain;
 }
-li.web{
+li.contactweb{
 	background: url(../img/web-icon.png) no-repeat left top;
 	height: 17.27;
 	width: 16.98;
 	padding-left: 27px;
 	background-size: contain;
 	margin-bottom: 10px;
+}
+.contacttwitter:hover{
+	background: url(../img/twit-icon-hover.png) no-repeat left top;
+	height: 17.27;
+	width: 16.98;
+	background-size: contain;
+}
+.contactweb:hover{
+	background: url(../img/web-icon-hover.png) no-repeat left top;
+	height: 17.27;
+	width: 16.98;
+	background-size: contain;
 }
 
 /*Base*/

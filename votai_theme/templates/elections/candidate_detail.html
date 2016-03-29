@@ -36,7 +36,7 @@
 							<img id="apoya" src="{% static 'img/hover-caraacara.png' %}" alt="{% trans "Apoya a tu candidato" %}" title="{% trans "Apoya a tu candidato" %}">
 							{% if candidate.extra_info.custom_ribbon %}<div class="ribbon">{{ candidate.extra_info.custom_ribbon }}</div>{% endif %}
 						</div>
-						
+						<!--
 						{% if candidate.image %}
 						<a class="btn btn-default button_pic hidden-xs" data-toggle="modal" href="#myCandidate" style="margin-bottom:5px" onClick="ga('send', 'event', 'support-candidate', 'click');"><i class="icon-camera"></i> {% trans "Da la cara por tu candidato" %}</a>
 						
@@ -74,11 +74,13 @@
 								</div>
 							</div>
 						</div>
-						<!-- /.modal -->
+						<!-- /.modal --><!--
 						{% endif %}
+						-->
 					</div>
 					<div class="col-md-7">
 						<h3>{{ candidate.name }}</h3>
+						<!--<h3>{{ candidate.given_name }}</h3>-->
 						<table class="table">
 							{% include 'elections/candidates/personal_data_candidate.html' with candidate=candidate %}
 						</table>			
@@ -133,9 +135,10 @@
 				<div class="col-md-3">
 					<div class="social-side">
 					{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-					<button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='{% url 'face_to_face_one_candidate_detail_view' slug=election.slug slug_candidate_one=candidate.id %}'"><i class="icon-bolt fa-2x textbtn"></i> <span class="textbtn">{% trans "Compáralo" %}</span></button>
-					{% endif %}
-					{% include 'elections/candidates/contacts.html' with candidate=candidate %}	
+							<button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='{% url 'face_to_face_one_candidate_detail_view' slug=election.slug slug_candidate_one=candidate.id %}'"><i class="icon-bolt fa-2x textbtn"></i> <span class="textbtn">{% trans "Compáralo" %}</span></button>
+							{% endif %}
+							{% include 'elections/candidates/contacts.html' with candidate=candidate %}
+							
 					</div>
 				</div>
 			</div>

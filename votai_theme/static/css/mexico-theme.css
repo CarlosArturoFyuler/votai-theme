@@ -940,6 +940,14 @@ li.contactweb{
 	background-size: contain;
 	margin-bottom: 10px;
 }
+li.contactface{
+	background: url(../img/face-icon.png) no-repeat left top;
+	height: 15px;
+	width: 15px;
+	padding-left: 27px;
+	background-size: contain;
+	margin-bottom: 10px;
+}
 .contacttwitter:hover{
 	background: url(../img/twit-icon-hover.png) no-repeat left top;
 	height: 17.27;
@@ -952,7 +960,12 @@ li.contactweb{
 	width: 16.98;
 	background-size: contain;
 }
-
+.contactface:hover{
+	background: url(../img/face-icon-hover.png) no-repeat left top;
+	height: 15;
+	width: 15;
+	background-size: contain;
+}
 /*Base*/
 .quienes {
 	padding-top: .9em;

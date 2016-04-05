@@ -655,6 +655,59 @@ input, button, select, textarea {
 	display: block;
 	background: #464C5E;
 }
+/*
+.close-circle{
+	background-image: url(../img/cross-icon.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	right: 18px;
+	top: 15px;
+	width: 45px;
+	height: 45px;
+	display: block;
+	z-index:1;
+}
+.close-circle:hover{
+	background-image: url(../img/cross-icon-hover.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	right: 18px;
+	top: 15px;
+	width: 45px;
+	height: 45px;
+	display: block;
+}
+*/
+.close-circle{
+	background-image: url(../img/close-icon.png);
+	right: 18px;
+	top: 15px;
+	width: 45px;
+	height: 45px;
+	z-index:1;
+}
+.close-circle:hover{
+	background-position: 0 -63px;
+}
+
+.link-container {
+		border: 1px solid;
+		width: 50%;
+		height: 20px;
+	}
+
+	.link-container a {
+		display: block;
+		background: #c8c8c8;
+		height: 100%;
+		text-align: center;
+	}
+
+	.link-container a:hover {
+		background: #f8f8f8;
+	}
 
 /* Frente a frente*/
 .progress-bar .fondo {
@@ -924,47 +977,64 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 	vertical-align: middle;
 	display: table-cell;
 }
-li.contacttwitter{
-	background: url(../img/twit-icon.png) no-repeat left top;
+/*li.contacttwitter{
+	background: url(../img/twitter-icon.png);
 	height: 15.21px;
 	width: 16.95px;
 	padding-left: 25px;
 	margin-bottom: 10px;
 	background-size: contain;
-}
-li.contactweb{
-	background: url(../img/web-icon.png) no-repeat left top;
-	height: 17.27;
-	width: 16.98;
-	padding-left: 27px;
-	background-size: contain;
-	margin-bottom: 10px;
-}
-li.contactface{
-	background: url(../img/face-icon.png) no-repeat left top;
-	height: 15px;
-	width: 15px;
-	padding-left: 27px;
-	background-size: contain;
-	margin-bottom: 10px;
-}
-.contacttwitter:hover{
+}*/
+/*.contacttwitter:hover{
 	background: url(../img/twit-icon-hover.png) no-repeat left top;
 	height: 17.27;
 	width: 16.98;
 	background-size: contain;
+}*/
+li.contacttwitter{
+	background: url(../img/twitter-icon.png) no-repeat left top;
+	height: 20px;
+	width: 20px;
+	padding-left: 25px;
+	margin-bottom: 5px;
+	padding-right: 100%;
+	background-size: 8%;
+	display: block;
+	/*border-style: solid;
+    border-width: 5px;*/
+}
+li.contacttwitter:hover{
+	background-position: 0 -30px;
+}
+
+li.contactweb{
+	background: url(../img/URL-icon.png) no-repeat left top;
+	height: 19px;
+	width: 19px;
+	padding-left: 27px;
+	padding-right: 100%;
+	background-size: 8%;
+	margin-bottom: 6.5px;
+	display: block;
 }
 .contactweb:hover{
-	background: url(../img/web-icon-hover.png) no-repeat left top;
-	height: 17.27;
-	width: 16.98;
-	background-size: contain;
+	background-position: 0 -31px;
+}
+li.contactface{
+	background: url(../img/facebook-icon.png) no-repeat left top;
+	height: 18px;
+	width: 18px;
+	padding-left: 27px;
+	background-size: 8%;
+	padding-right: 100%;
+	margin-bottom: 5px;
+	display: block;
 }
 .contactface:hover{
-	background: url(../img/face-icon-hover.png) no-repeat left top;
-	height: 15;
-	width: 15;
-	background-size: contain;
+	background-position: 0 -30px;
+}
+.padding-list{
+	padding-top: 25px;
 }
 /*Base*/
 .quienes {
@@ -1120,7 +1190,7 @@ li.contactface{
 }
 
 .social-side button.btn-primary {
-	margin: 50px 0 25px;
+	margin-top: 45px;
 }
 
 .social-link-candidate {

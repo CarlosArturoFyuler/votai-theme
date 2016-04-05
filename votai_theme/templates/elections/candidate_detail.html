@@ -14,11 +14,12 @@
 
 {% block mainelection %}
 	<div class="container-profile">
-		<div>
-		<!-- <h3>{{ candidate.name }}</h3> -->
-		</div>
+		<!--<div>
+		 <h3>{{ candidate.name }}</h3> 
+		</div>-->
 
 		<div class="profile-candidate position-relative">
+				<a class="close-circle position-absolute" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}"></a>
 			<div class="row">
 				<div class="col-md-9">
 					<div class="col-md-5">

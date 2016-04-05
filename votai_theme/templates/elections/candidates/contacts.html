@@ -16,7 +16,7 @@
          </li>
     {% endfor %}
 </ul>-->
-<ul class="list-unstyled">
+<ul class="list-unstyled padding-list">
     {% for contact_detail in candidate.contact_details.all %}       
             <a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">
                 {% if contact_detail.contact_type == "TWITTER" %}

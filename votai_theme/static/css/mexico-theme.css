@@ -655,6 +655,9 @@ input, button, select, textarea {
 	display: block;
 	background: #464C5E;
 }
+.candidates-test{
+	padding: 0 15px;/*vouyou*/
+}
 /*
 .close-circle{
 	background-image: url(../img/cross-icon.png);
@@ -681,12 +684,13 @@ input, button, select, textarea {
 }
 */
 .close-circle{
-	background-image: url(../img/close-icon.png);
+	background-image: url(../img/cerrar-icon.png);
 	right: 18px;
 	top: 15px;
 	width: 45px;
 	height: 45px;
 	z-index:1;
+	background-size: 100%;
 }
 .close-circle:hover{
 	background-position: 0 -63px;
@@ -997,41 +1001,41 @@ li.contacttwitter{
 	width: 20px;
 	padding-left: 25px;
 	margin-bottom: 5px;
-	padding-right: 100%;
-	background-size: 8%;
+	/*padding-right: 100%;*/
+	background-size: 70%;
 	display: block;
 	/*border-style: solid;
     border-width: 5px;*/
 }
 li.contacttwitter:hover{
-	background-position: 0 -30px;
+	background-position: 0 -32px;
 }
 
 li.contactweb{
 	background: url(../img/URL-icon.png) no-repeat left top;
-	height: 19px;
+	height: 20px;
 	width: 19px;
 	padding-left: 27px;
-	padding-right: 100%;
-	background-size: 8%;
+	/*padding-right: 100%;*/
+	background-size: 70%;
 	margin-bottom: 6.5px;
 	display: block;
 }
 .contactweb:hover{
-	background-position: 0 -31px;
+	background-position: 0 -34px;
 }
 li.contactface{
 	background: url(../img/facebook-icon.png) no-repeat left top;
 	height: 18px;
 	width: 18px;
 	padding-left: 27px;
-	background-size: 8%;
-	padding-right: 100%;
+	background-size: 70%;
+	/*padding-right: 100%;*/
 	margin-bottom: 5px;
 	display: block;
 }
 .contactface:hover{
-	background-position: 0 -30px;
+	background-position: 0 -34px;
 }
 .padding-list{
 	padding-top: 25px;
@@ -1640,6 +1644,14 @@ animation: doscaras 4s infinite;
 	}
 }
 
+@media(max-width:767px){
+	/*#footer{
+		width: 100%;
+	}*/
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 .explanation-container {
 	color: #323a45;

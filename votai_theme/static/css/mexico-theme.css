@@ -60,11 +60,6 @@ html, body {
   padding: 0 0 60px;
 }
 
-#election{
-	width:878px;
-	margin:0 auto;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family:  'Lato', sans-serif;
 }
@@ -563,7 +558,9 @@ input, button, select, textarea {
 	color:#444A5A;
 	font-size: 16px;
 }
-
+#election{
+	margin:0 auto;
+	}
 
 /*Perfil candidato*/
 
@@ -656,7 +653,7 @@ input, button, select, textarea {
 	background: #464C5E;
 }
 .candidates-test{
-	padding: 0 15px;/*vouyou*/
+	/*padding: 0 15px;vouyou*/
 }
 /*
 .close-circle{
@@ -1046,6 +1043,12 @@ li.contactface{
 	padding-bottom: .9em;
 	color: white;
 }
+
+/* Header */
+.navbar-toggle{
+	margin-top: 4%;
+}
+
 /* Footer */
 .bg-left-dotted{
 	background-image: url(../img/textura_dizq_footer.png);
@@ -1645,13 +1648,19 @@ animation: doscaras 4s infinite;
 }
 
 @media(max-width:767px){
-	/*#footer{
-		width: 100%;
-	}*/
+	.container-candidates {
+		display: block;
+}
 }
 @media(min-width:768px){}
 @media(min-width:992px){}
-@media(min-width:1200px){}
+@media(min-width:1200px){
+	#election{
+	/*width:878px;*/
+	width:85%;
+	margin:0 auto;
+	}
+}
 
 .explanation-container {
 	color: #323a45;

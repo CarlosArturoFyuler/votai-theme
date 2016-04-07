@@ -15,10 +15,11 @@
 <meta name="google-site-verification" content="{{ 'gsite-verification'|ga }}">
 <!--for facebook fans-->
 <!--<meta property="og:title" content="{{ 'title'|ogpdata }}">-->
-<meta property="og:title" content="Prueba página">
+<meta property="og:title" content="{{ 'title'|ogpdata }}">
 <meta property="og:type" content="{{ 'type'|ogpdata }}">
 <meta property="og:url" content="{{ 'url'|ogpdata }}">
 <meta property="og:image" content="{% static 'image'|ogpdata %}">
+<link rel="canonical" href="{% block canonical_url %}{% endblock %}">
 <!--eoff-->
 <link rel="shortcut icon" sizes="196x196" href="{% static 'img/votai-196.png' %}">
 <!-- Browser out of date -->

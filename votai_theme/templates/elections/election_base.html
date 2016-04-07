@@ -46,12 +46,12 @@
 	</div>
 </div>
 </div>
-<div class="col-sm-12 col-xs-12">
-<h2 class="text-center"><span class="lato-font-grey">{{ election }} | </span><img src="{% static 'img/vota.png' %}" alt="Vota"title="Vota"> <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey">no slogans</span></h2>
+<div class="col-sm-12 col-xs-12 col-md-12">
+<h2 class="text-center"><span class="lato-font-grey">{{ election }} | </span><img src="{% static 'img/vota.png' %}" alt="Vota"title="Vota" > <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey">no slogans</span></h2>
 </div>
 <div class="row">
 <div class="nav-candidator">
-	<nav class="col-md-12 col-sm-12 hidden-xs">
+	<nav class="col-md-12 col-sm-12 visible-lg">
 		<ul class="list-inline">
 			{% if 'profiles'|val_navbars  %}
 				<li {% block tab_profile %}{% endblock %}><a href="{% url 'election_view' slug=election.slug %}" accesskey="p" title="{% trans "Perfiles" %} (Alt+p)">{% trans "Perfiles" %}</a><span class="bg-line-active"></span></li>

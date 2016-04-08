@@ -38,7 +38,7 @@
             });
             </script>
             <ul class="accordion" id="gridaccordion-{{forloop.counter}}">
-              {% for candidate in featured_election.candidates.all %}
+              {% for candidate in featured_election.candidates.all|dictsort:"candidate.sort_name" %}
               <li>
                   {% if candidate.image %}
                   {% thumbnail candidate.image "x300" as im %}

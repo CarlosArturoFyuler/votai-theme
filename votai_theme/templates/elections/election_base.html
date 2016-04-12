@@ -47,36 +47,37 @@
 </div>
 </div>
 <div class="col-sm-12 col-xs-12 col-md-12">
-<h2 class="text-center"><span class="lato-font-grey">{{ election }} | </span><img src="{% static 'img/votaX2.png' %}" alt="Vota"title="Vota" width="11%" height="11%"> <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey">no slogans</span></h2>
+<h2 class="text-center"><span class="lato-font-grey">{{ election }} | </span><img src="{% static 'img/votaX2.png' %}" alt="Vota"title="Vota" width="11%" height="11%" class="vota-img"> <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey"> no por slogans</span></h2>
 </div>
 <div class="row">
 <div class="nav-candidator">
 	<nav class="col-md-12 col-sm-12 visible-lg">
 		<ul class="list-inline">
 			{% if 'profiles'|val_navbars  %}
-				<li {% block tab_profile %}{% endblock %}><a href="{% url 'election_view' slug=election.slug %}" accesskey="p" title="{% trans "Perfiles" %} (Alt+p)">{% trans "Perfiles" %}</a><span class="bg-line-active"></span></li>
+				<li {% block tab_profile %}{% endblock %}><a href="{% url 'election_view' slug=election.slug %}" accesskey="p" title="{% trans "Perfiles" %} (Alt+p)">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
 			{% endif %}
 			{% if 'questionary'|val_navbars and election.uses_questionary  %}
-				<li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active" style="background-color: #34A563;"></span></li>
+				<li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
 			{% endif %}
 			{% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
-				<li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "1/2 Naranja" %} (Alt+n)">{% trans "1/2 Naranja" %}</a><span class="bg-line-active" style="background-color: #EC6D55;"></span></li>
+				<li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "1/2 Naranja" %} (Alt+n)">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
 			{% endif %}
 			{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-				<li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Frente a Frente" %} (Alt+f)">{% trans "Frente a Frente" %}</a><span class="bg-line-active" style="background-color: #5562A1;"></span></li>
+				<li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Frente a Frente" %} (Alt+f)">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
 			{% endif %}
 			<!--
 				<li {% block tab_ask %}{% endblock %}><a href="{% block url_ask %}{% url 'ask_detail_view' slug=election.slug %}{% endblock url_ask %}" accesskey="r" title="{% trans "Preguntales" %} (Alt+r)">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
-			-->
+			
 			{% if election.extra_info_title %}
 				<li {% block tab_extrainfo %}{% endblock %}><a href="{% url 'election_extra_info' slug=election.slug %}">{{election.extra_info_title}} </a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
 			{% endif %}
+			-->
 			
 		</ul>
 	</nav>
 </div>
 </div>
-<div class="container candidates-test"> <!--vouyou-->
+<div class="container">
 {% block mainelection %}
 {% endblock mainelection %}
 </div>

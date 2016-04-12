@@ -388,25 +388,27 @@ input, button, select, textarea {
 	margin-left: -8px;*/
 }
 .bg-line-active{
+    height: 6px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    visibility: hidden;
+}
+.active-yellow{
 	background-color: #F9B634;
-    height: 6px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    visibility: hidden;
 }
-.bg-line-active-c{
+.active-green{
 	background-color: #34A563;
-    height: 6px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    visibility: hidden;
 }
+.active-orange{
+	background-color: #EC6D55;
+}
+.active-purple{
+	background-color: #5562A1;
+}
+
 .nav-candidator ul.list-inline {
 	margin-bottom: 0px;
 	height: auto;
@@ -652,9 +654,6 @@ input, button, select, textarea {
 	padding: 5px;
 	display: block;
 	background: #464C5E;
-}
-.candidates-test{
-	/*padding: 0 15px;vouyou*/
 }
 /*
 .close-circle{
@@ -1651,9 +1650,15 @@ animation: doscaras 4s infinite;
 @media(max-width:767px){
 	.container-candidates {
 		display: block;
+	}
+	.vota-img{
+		width: 28%;
+		height: 25%;
+	}
 }
+@media(min-width:768px){
+
 }
-@media(min-width:768px){}
 @media(min-width:992px){}
 @media(min-width:1200px){
 	#election{

@@ -18,6 +18,7 @@
 <meta property="og:type" content="{{ 'type'|ogpdata }}">
 <meta property="og:url" content="{{ 'url'|ogpdata }}">
 <!--<meta property="og:image" content="{% static 'image'|ogpdata %}">-->
+<!--<meta property="og:description" content="{{ 'description'|ogpdata }}">-->
 <meta property="og:image" content="http://www.votainteligente.mx/static/img/votaX3.png">
 <meta property="og:site_name" content="{{ 'site_name'|ogpdata }}">
 
@@ -55,7 +56,7 @@ document.body.appendChild(e);
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src="{% static 'img/logotipoX2.png' %}" class="img-responsive" title="Vota Inteligente" alt="Vota Inteligente" width="45%" height="45%"></a>
+            <a class="navbar-brand" href="/"><img src="{% static 'img/logotipo-new.png' %}" class="img-responsive" title="Vota Inteligente" alt="Vota Inteligente" width="48%" height="48%"></a>
         </div>
         <div class="collapse navbar-collapse">
             {% get_flatpages as flatpages %}
@@ -63,7 +64,37 @@ document.body.appendChild(e);
                 {% for page in flatpages %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endfor %}
-                <li class="quienes"><a target="_blank" href="http://ciudadanointeligente.org/">| <span class="quienes">¿Qué es Vota Inteligente?</span></a></li>
+                
+                <!-- mobile version-->
+                <div class="visible-xs">
+                {% if election.slug  %}
+                    {% if 'profiles'|val_navbars  %}
+                        <li><a href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
+                    {% endif %}
+                    {% if 'questionary'|val_navbars and election.uses_questionary  %}
+                        <li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
+                    {% endif %}
+                    {% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
+                        <li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "1/2 Naranja" %} (Alt+n)">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
+                    {% endif %}
+                    {% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
+                        <li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Frente a Frente" %} (Alt+f)">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
+                    {% endif %}
+                    <!--
+                        <li {% block tab_ask %}{% endblock %}><a href="{% block url_ask %}{% url 'ask_detail_view' slug=election.slug %}{% endblock url_ask %}" accesskey="r" title="{% trans "Preguntales" %} (Alt+r)">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
+                    
+                    {% if election.extra_info_title %}
+                        <li {% block tab_extrainfo %}{% endblock %}><a href="{% url 'election_extra_info' slug=election.slug %}">{{election.extra_info_title}} </a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
+                    {% endif %}
+                    -->
+                {% endif %}
+                </div>
+                <!--end mobile v-->
+
+                {% if election.slug  %}
+                <li class="quienes"><a href="{% url 'election_extra_info' slug=election.slug %}">| <span class="quienes">¿Qué es Vota Inteligente?</span></a>
+                </li>
+                {% endif %}
             </ul>
             </div><!--/.nav-collapse -->
         </div>

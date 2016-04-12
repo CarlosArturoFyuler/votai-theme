@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h2 class="text-center intro-home">
-        <span class="lato-font-grey"></span><img src="{% static 'img/vota.png' %}" alt="Vota Inteligente" title="Vota Inteligente"> <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey">no slogans</span>
+        <span class="lato-font-grey"></span><img src="{% static 'img/votaX2.png' %}" alt="Vota" title="Vota Inteligente" width="11%" height="11%" class="vota-img"> <span class="lato-ligth-font-grey">por </span><span class="lato-font-grey">propuestas,</span> <span class="lato-ligth-font-grey"> no por slogans</span>
       </h2>
     </div>
   </div>
@@ -158,7 +158,7 @@
   <!-- end mobile version -->
 
   <!-- Searchable Elections  -->
-  {% if searchable_elections_enabled %}
+<!--  {% if searchable_elections_enabled %}
 
   <h2>{% trans "Encuentra tus candidatos" %}</h2>
 
@@ -189,25 +189,25 @@
             </ul>
         </div>
     </div>
-  {% endif %}
+  {% endif %}-->
 </div>
 
 {% endblock content %}
 
 {% block extrafooter %}
   <div class="extra-footer">
-        <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                <img src="{% static 'img/dummy-img.jpg' %}">
-              </div>
-              <div class="col-md-4">
-                <img src="{% static 'img/dummy-img.jpg' %}">
-              </div>
-              <div class="col-md-4">
-                 <img src="{% static 'img/dummy-img.jpg' %}">
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'img/dummy-img.jpg' %}">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'img/dummy-img.jpg' %}">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'img/dummy-img.jpg' %}">
+        </div>
       </div>
+    </div>
   </div>
 {% endblock extrafooter %}

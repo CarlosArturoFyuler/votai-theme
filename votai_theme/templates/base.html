@@ -69,16 +69,16 @@ document.body.appendChild(e);
                 <div class="visible-xs">
                 {% if election.slug  %}
                     {% if 'profiles'|val_navbars  %}
-                        <li><a href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
+                        <li><a class="yellow" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
                     {% endif %}
                     {% if 'questionary'|val_navbars and election.uses_questionary  %}
-                        <li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
+                        <li><a class="green" href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
                     {% endif %}
                     {% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
-                        <li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "1/2 Naranja" %} (Alt+n)">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
+                        <li><a class="orange" href="{% url 'soul_mate_detail_view' slug=election.slug %}" title="{% trans "1/2 Naranja" %}">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
                     {% endif %}
                     {% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-                        <li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Frente a Frente" %} (Alt+f)">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
+                        <li><a class="purple" href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" title="{% trans "Frente a Frente" %}">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
                     {% endif %}
                     <!--
                         <li {% block tab_ask %}{% endblock %}><a href="{% block url_ask %}{% url 'ask_detail_view' slug=election.slug %}{% endblock url_ask %}" accesskey="r" title="{% trans "Preguntales" %} (Alt+r)">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
@@ -92,7 +92,7 @@ document.body.appendChild(e);
                 <!--end mobile v-->
 
                 {% if election.slug  %}
-                <li class="quienes"><a href="{% url 'election_extra_info' slug=election.slug %}">| <span class="quienes">¿Qué es Vota Inteligente?</span></a>
+                <li><a class="quienes" href="{% url 'election_extra_info' slug=election.slug %}">¿Qué es Vota Inteligente?</a>
                 </li>
                 {% endif %}
             </ul>

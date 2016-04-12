@@ -446,9 +446,6 @@ input, button, select, textarea {
 }
 
 
-.quienes{
-	padding-left: 5px;
-}
 .compartir{
 	padding-top: 10px;
 }
@@ -1038,12 +1035,16 @@ li.contactface{
 	padding-top: 25px;
 }
 /*Base*/
-.quienes {
-	padding-top: .9em;
-	padding-bottom: .9em;
-	color: white;
-}
 
+.quienes {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin: 22px 0;
+	color: white;
+	padding-left: 2px;
+	border-left: solid 1px;
+	border-color: #FFF !important;
+	}
 /* Header */
 .navbar-toggle{
 	margin-top: 4%;
@@ -1655,6 +1656,45 @@ animation: doscaras 4s infinite;
 		width: 28%;
 		height: 25%;
 	}
+
+	/*Menu responsive*/
+	.navbar-nav {
+		float: left;
+		padding-left: 35px;
+
+	}
+	.nav li{
+		padding: 12px 0; 
+	}
+	.nav li a{
+		font-family: 'Lato' sans-serif;
+		font-size: 21px;
+		color: #FFF;
+		padding-left: 25px;
+		border-left: solid 3px;
+	}
+	
+	/*.nav li:last-child a{
+		border-left: none !important;
+	}*/
+	.quienes{
+		border-left: none !important;
+	}
+
+	a.yellow{
+		border-color: #F9B634 !important;
+	}
+	a.green{
+		border-color: #34A563 !important;
+	}
+	a.orange{
+		border-color: #EC6D55 !important;
+	}
+	a.purple{
+		border-color: #5562A1 !important;
+	}
+	/*Menu responsive end*/
+	
 }
 @media(min-width:768px){
 

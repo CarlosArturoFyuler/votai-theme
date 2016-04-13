@@ -51,11 +51,13 @@ document.body.appendChild(e);
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
+            <div {% if election.slug = None %}class="hide"{% endif %}>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            </div>
             <a class="navbar-brand" href="/"><img src="{% static 'img/logotipo-new.png' %}" class="img-responsive" title="Vota Inteligente" alt="Vota Inteligente" width="48%" height="48%"></a>
         </div>
         <div class="collapse navbar-collapse">
@@ -88,7 +90,7 @@ document.body.appendChild(e);
                 <a href="http://www.ciudadanointeligente.org/" target="_blank"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
             </div>
             <!--<div class="col-md-offset-1 col-md-3 col-sm-3 text-center">
-                <!--<a href="http://www.ciudadanointeligente.org/" target="_blank"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
+                <a href="http://www.ciudadanointeligente.org/" target="_blank"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
             </div>-->
             <div class="col-md-6 col-sm-6">
                 <ul>

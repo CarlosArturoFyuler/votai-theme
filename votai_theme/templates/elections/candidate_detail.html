@@ -27,7 +27,7 @@
 							{% if candidate.image %}
 
 							{% thumbnail candidate.image "300x300" crop="center" as im %}
-							    <img src="{{ im.url }}" alt="{{candidate.name}}" height="300" width="300" border="0" class="img-responsive">
+							    <img src="{{ im.url }}" alt="{{candidate.name}}" height="300" width="300" border="0" class="img-responsive center-block">
 							{% endthumbnail %}
 							
 							{% else %}
@@ -134,7 +134,7 @@
 					{% endif %}
 				</div>
 				<div class="col-md-3">
-					<div class="social-side">
+					<div class="social-side text-center">
 					{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
 							<button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='{% url 'face_to_face_one_candidate_detail_view' slug=election.slug slug_candidate_one=candidate.id %}'"><i class="icon-bolt fa-2x textbtn"></i> <span class="textbtn">{% trans "Compáralo" %}</span></button>
 							{% endif %}

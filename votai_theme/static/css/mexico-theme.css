@@ -1139,7 +1139,7 @@ li.contactface{
 
 .container-profile h3 {
 	margin-top: 0;
-	padding: 20px 20px 0 20px;
+	padding: 20px 20px 0 7px;
 	color: #444A5A;
 	font-family: 'Lato-bold', sans-serif;
 	font-size: 26px;
@@ -1740,17 +1740,56 @@ animation: doscaras 4s infinite;
 	}
 	.text-center.intro-home {
 		margin: 10px 0px 10px;
-		font-size: 25px;
+		/*font-size: 25px;*/
 	}
 	.candidates-home{
 		text-align: center;
 		padding: 0;
 		list-style: none;
 	}
+	.pad-li{
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
 	.grey-font{
 		color:#827F7F;
 	}
-
+	.font21{
+		font-size: 21px;
+	}
+	/*Candidate detail resp*/
+	.profile-candidate-font{
+	font-size: 14px;
+	}
+	.personal-data-font{
+	font-size: 12px;
+	}
+	.container-profile h3{
+		font-size: 20px;
+	}
+	.close-circle{
+		right: 6px;
+		top: 6px;
+		width: 28px;
+	    height: 28px;
+	}
+	.antecedentes{
+		font-size: 13px;
+	}
+	.profile-candidate{
+		padding: 30px 7px;
+	}
+	.social-side button.btn-primary {
+    	margin-top: 10px;
+	}
+	.social-side button.btn-primary {
+		display: inline-block;
+		margin-top: 0px;
+		padding: 7px 17px;
+		width: initial;
+		margin: 0 auto;
+	}
+	/*Candidate detail resp end*/
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{
@@ -1758,6 +1797,15 @@ animation: doscaras 4s infinite;
 	}
 	html, body{
 		padding-top: 0 !important;
+	}
+}
+@media screen and (max-width: 768px){
+	.social-side button.btn-primary {
+		display: inline-block;
+		margin-top: 0px;
+		padding: 7px 17px;
+		width: initial;
+		margin: 0 auto;
 	}
 }
 @media(min-width:768px){

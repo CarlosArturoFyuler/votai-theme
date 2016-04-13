@@ -1652,19 +1652,37 @@ animation: doscaras 4s infinite;
 	.container-candidates {
 		display: block;
 	}
-	.vota-img{
-		width: 28%;
-		height: 25%;
-	}
 
 	/*Menu responsive*/
 	.navbar-nav {
+		margin: 0 !important;
 		float: left;
-		padding-left: 35px;
+		/*padding: 0px 8%;*/
+		width: 100%;
+		padding-top: 20px;
+	}
+	.navbar-toggle{
+		position: absolute !important;
+		right: 0 !important;
+	}
+	.navbar-collapse{
+		border-top: none !important;
+		box-shadow: inset 0 1px 0 #363D4D;
+		background-image: url(../img/texture-menu-xs.png);
+		background-repeat: no-repeat;
+		background-position: 98.5% 95%;
+		background-size: 80px;
 
 	}
+	.navbar-inverse .navbar-toggle {
+		/* border-color: #333; */
+		border-color: #363D4D !important;
+	}
 	.nav li{
-		padding: 12px 0; 
+		padding: 12px 8%; 
+	}
+	.no-padding{
+		padding: 0 !important;
 	}
 	.nav li a{
 		font-family: 'Lato' sans-serif;
@@ -1679,8 +1697,13 @@ animation: doscaras 4s infinite;
 	}*/
 	.quienes{
 		border-left: none !important;
+		padding-top: 40px !important;
+		padding-bottom: 15px !important;
 	}
-
+	
+	.navbar-collapse.in {
+    	overflow-y: visible;
+	}
 	a.yellow{
 		border-color: #F9B634 !important;
 	}
@@ -1694,10 +1717,49 @@ animation: doscaras 4s infinite;
 		border-color: #5562A1 !important;
 	}
 	/*Menu responsive end*/
-	
+
+	/*Footer*/
+	.bg-right-dotted {
+    background-image: url(../img/iphone_textura_der_footer.png);
+	}
+	.bg-left-dotted {
+    background-image: url(../img/iphone_textura_izq_footer.png);
+	}
+	#footer ul {
+    padding-top: 50px;
+    padding-left: 12px;
+	}
+	/*Footer end*/
+
+	/*.col-xs-center{
+		text-align: center;
+	}*/
+	.center-block{
+    	margin: 0 auto;
+	}
+	.candi-name-center{
+		max-width: 314px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (orientation:landscape) and (max-width: 767px){
+	.navbar-fixed-top, .navbar-fixed-bottom{
+		position: initial;
+	}
+	html, body{
+		padding-top: 0 !important;
+	}
 }
 @media(min-width:768px){
-
+	.center-block{
+    	margin: 0 auto;
+	}
+	.candi-name-center{
+		max-width: 314px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
 }
 @media(min-width:992px){}
 @media(min-width:1200px){

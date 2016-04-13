@@ -62,39 +62,10 @@ document.body.appendChild(e);
             {% get_flatpages as flatpages %}
             <ul class="nav navbar-nav">
                 {% for page in flatpages %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>     
                 {% endfor %}
-                
-                <!-- mobile version-->
-                <div class="visible-xs">
-                {% if election.slug  %}
-                    {% if 'profiles'|val_navbars  %}
-                        <li><a class="yellow" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
-                    {% endif %}
-                    {% if 'questionary'|val_navbars and election.uses_questionary  %}
-                        <li><a class="green" href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
-                    {% endif %}
-                    {% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
-                        <li><a class="orange" href="{% url 'soul_mate_detail_view' slug=election.slug %}" title="{% trans "1/2 Naranja" %}">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
-                    {% endif %}
-                    {% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-                        <li><a class="purple" href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" title="{% trans "Frente a Frente" %}">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
-                    {% endif %}
-                    <!--
-                        <li {% block tab_ask %}{% endblock %}><a href="{% block url_ask %}{% url 'ask_detail_view' slug=election.slug %}{% endblock url_ask %}" accesskey="r" title="{% trans "Preguntales" %} (Alt+r)">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
-                    
-                    {% if election.extra_info_title %}
-                        <li {% block tab_extrainfo %}{% endblock %}><a href="{% url 'election_extra_info' slug=election.slug %}">{{election.extra_info_title}} </a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
-                    {% endif %}
-                    -->
-                {% endif %}
-                </div>
-                <!--end mobile v-->
-
-                {% if election.slug  %}
-                <li><a class="quienes" href="{% url 'election_extra_info' slug=election.slug %}">¿Qué es Vota Inteligente?</a>
-                </li>
-                {% endif %}
+                {% block extra_header_links %}{% endblock %}
+                {% block que_es_vota %}{% endblock %}
             </ul>
             </div><!--/.nav-collapse -->
         </div>

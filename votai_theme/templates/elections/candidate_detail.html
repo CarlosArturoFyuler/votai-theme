@@ -22,7 +22,7 @@
 				<a class="close-circle position-absolute" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}"></a>
 			<div class="row">
 				<div class="col-md-9">
-					<div class="col-md-5">
+					<div class="col-md-5 col-sm-5">
 						<div id="candidate-img-profile">
 							{% if candidate.image %}
 
@@ -79,7 +79,7 @@
 						{% endif %}
 						-->
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-sm-7">
 						<h3>{{ candidate.name }}</h3>
 						<!--<h3>{{ candidate.given_name }}</h3>-->
 						<table class="table">

@@ -1649,10 +1649,6 @@ animation: doscaras 4s infinite;
 }
 
 @media(max-width:767px){
-	.container-candidates {
-		display: block;
-	}
-
 	/*Menu responsive*/
 	.navbar-nav {
 		margin: 0 !important;
@@ -1742,6 +1738,19 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+	.text-center.intro-home {
+		margin: 10px 0px 10px;
+		font-size: 25px;
+	}
+	.candidates-home{
+		text-align: center;
+		padding: 0;
+		list-style: none;
+	}
+	.grey-font{
+		color:#827F7F;
+	}
+
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{
@@ -1760,8 +1769,11 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+	
 }
-@media(min-width:992px){}
+@media(min-width:992px){
+	
+}
 @media(min-width:1200px){
 	#election{
 	/*width:878px;*/

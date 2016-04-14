@@ -1730,6 +1730,7 @@ animation: doscaras 4s infinite;
 	/*.col-xs-center{
 		text-align: center;
 	}*/
+	/* candidates*/
 	.center-block{
     	margin: 0 auto;
 	}
@@ -1738,6 +1739,8 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+	/* candidates end*/
+	/* home */
 	.text-center.intro-home {
 		margin: 10px 0px 10px;
 		/*font-size: 25px;*/
@@ -1757,6 +1760,7 @@ animation: doscaras 4s infinite;
 	.font21{
 		font-size: 22px;
 	}
+	/* home end*/
 	/*Candidate detail resp*/
 	.profile-candidate-font{
 	font-size: 14px;
@@ -1815,6 +1819,16 @@ animation: doscaras 4s infinite;
 		font-size: 13px;
 	}
 	/*Candidate detail resp end*/
+	.overlay-web-full {
+		display: block;
+		width: 100%;
+		height: 0;
+		opacity: 0;
+		background-color: #000;
+		position: fixed;
+		z-index: 101;
+		top: 0;
+	}
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{

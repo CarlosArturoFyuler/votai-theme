@@ -47,7 +47,7 @@ document.body.appendChild(e);
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body data-ng-app="votainteligente">
-<div class="navbar-toggle"></div> <!--VOUYOU-->
+<div class="overlay-web-full"></div>
 <div id="wrapper">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -68,7 +68,7 @@ document.body.appendChild(e);
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>     
                 {% endfor %}
                 {% block extra_header_links %}{% endblock %}
-                {% block que_es_vota %}{% endblock %}
+                {# block que_es_vota #}{# endblock #}
             </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -120,6 +120,8 @@ var app = angular.module('votainteligente', []);
 <script type="text/javascript">
 {% block extrajs %}
 {% endblock extrajs %}
+{% block extrajsfade %}
+{% endblock extrajsfade %}
 </script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

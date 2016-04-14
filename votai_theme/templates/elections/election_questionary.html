@@ -62,12 +62,12 @@
 						<div >
 							<div>
 								<div>
-									<i class="icon-quote-left"></i> {{position.label}} <i class="icon-quote-right"></i>
+									<!--<i class="icon-quote-left"></i>--> "{{position.label}}" <!--<i class="icon-quote-right"></i>-->
 								</div>
 								{% for taken_position in position.taken_positions.all %}
 									{% with candidate=taken_position.person %}
 										{% if forloop.first %}
-											<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}">{{candidate.name}}</a>
+											<a class="grey-font" href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}">{{candidate.name}}</a>
 										{% elif forloop.last %}
 											{% trans "y" %} <a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}">{{candidate.name}}</a>
 										{% else %}

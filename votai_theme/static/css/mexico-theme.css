@@ -850,6 +850,18 @@ input, button, select, textarea {
 	padding-left: 30px;
 }
 
+#declara-tu-amor{
+	padding-left: 25px;
+	font-size: 15px;
+}
+
+#candidate-img-profile{
+    margin-left: 9px; /*vouyou*/
+}
+#afinidad{
+	font-size: 16px;
+}
+
 /*Frente a frente*/
 
 .porcentaje-similitud {
@@ -1755,9 +1767,9 @@ animation: doscaras 4s infinite;
 		padding-bottom: 6px;
 	}
 	.grey-font{
-		color:#827F7F;
+		color: #444A5A;
 	}
-	.font21{
+	.font22{
 		font-size: 22px;
 	}
 	/* home end*/

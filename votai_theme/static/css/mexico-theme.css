@@ -408,6 +408,9 @@ input, button, select, textarea {
 .active-purple{
 	background-color: #5562A1;
 }
+.active-mov{
+	opacity: 0.5;
+}
 
 .nav-candidator ul.list-inline {
 	margin-bottom: 0px;

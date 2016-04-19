@@ -25,19 +25,19 @@
 	<!-- mobile version-->
 	<div class="visible-xs">
 		{% if 'profiles'|val_navbars  %}
-			<li><a class="yellow" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a><span class="bg-line-active active-yellow"></span></li>
+			<li><a class="yellow {% block tab_profile_mov %}{% endblock %}" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}">{% trans "Perfiles" %}</a></li>
 		{% endif %}
 		{% if 'questionary'|val_navbars and election.uses_questionary  %}
-			<li><a class="green" href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a><span class="bg-line-active active-green"></span></li>
+			<li><a class="green {% block tab_questionary_mov %}{% endblock %}" href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"> {% trans "Cuestionario" %}</a></li>
 		{% endif %}
 		{% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
-			<li><a class="orange" href="{% url 'soul_mate_detail_view' slug=election.slug %}" title="{% trans "1/2 Naranja" %}">{% trans "1/2 Naranja" %}</a><span class="bg-line-active active-orange"></span></li>
+			<li><a class="orange {% block tab_soulmate_mov %}{% endblock %}" href="{% url 'soul_mate_detail_view' slug=election.slug %}" title="{% trans "1/2 Naranja" %}">{% trans "1/2 Naranja" %}</a></li>
 		{% endif %}
 		{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-			<li><a class="purple" href="{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}" title="{% trans "Frente a Frente" %}">{% trans "Frente a Frente" %}</a><span class="bg-line-active active-purple"></span></li>
+			<li><a class="purple {% block tab_facetoface_mov %}{% endblock %}" href="{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}" title="{% trans "Frente a Frente" %}">{% trans "Frente a Frente" %}</a></li>
 		{% endif %}
 		<!--
-		<li {# block tab_ask #}{# endblock #}><a href="{# block url_ask #}{# url 'ask_detail_view' slug=election.slug #}{# endblock url_ask #}" accesskey="r" title="{% trans "Preguntales" %} (Alt+r)">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
+		<li {# block tab_ask #}{# endblock #}><a href="{# block url_ask #}{# url 'ask_detail_view' slug=election.slug #}{# endblock url_ask #}" accesskey="r" title="{% trans "Preguntales" %} ">{% trans "Preguntales" %}</a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>
 		
 		{% if election.extra_info_title %}
 			<li {# block tab_extrainfo #}{# endblock #}><a href="{# url 'election_extra_info' slug=election.slug #}">{{election.extra_info_title}} </a><span class="bg-line-active" style="background-color: #20B3AF;"></span></li>

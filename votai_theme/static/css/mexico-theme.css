@@ -894,7 +894,6 @@ input, button, select, textarea {
 	top: 11px;
 	content: "\f078";
 	font-family: FontAwesome;
-	/*font-family: 'Lato-bold', sans-serif;*/
 	font-weight: normal;
 	right: 15px;
 }
@@ -1006,7 +1005,7 @@ li.contacttwitter{
 	height: 20px;
 	width: 20px;
 	padding-left: 25px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	/*padding-right: 100%;*/
 	background-size: 70%;
 	display: block;
@@ -1024,7 +1023,7 @@ li.contactweb{
 	padding-left: 27px;
 	/*padding-right: 100%;*/
 	background-size: 70%;
-	margin-bottom: 6.5px;
+	margin-bottom: 10px;
 	display: block;
 }
 .contactweb:hover{
@@ -1037,7 +1036,7 @@ li.contactface{
 	padding-left: 27px;
 	background-size: 70%;
 	/*padding-right: 100%;*/
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	display: block;
 }
 .contactface:hover{
@@ -1841,6 +1840,9 @@ animation: doscaras 4s infinite;
 		z-index: 101;
 		top: 0;
 	}
+	.chosen-container-single .chosen-single {
+		margin-bottom: 20px;
+	}
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{
@@ -1858,6 +1860,19 @@ animation: doscaras 4s infinite;
 		width: initial;
 		margin: 0 auto;
 	}
+	li.contacttwitter{
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	li.contactweb{
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+
+	li.contactface{
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
 }
 @media(min-width:768px){
 	.center-block{
@@ -1868,7 +1883,9 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
-	
+	.chosen-container-single .chosen-single {
+		margin-bottom: 20px;
+	}
 }
 @media(min-width:992px){
 	

@@ -41,3 +41,8 @@ var searchFormController = function($scope, $http, $filter, $log){
     return matches
 	}
 };
+window.onload = function(event) {
+    if(document.body.clientWidth<767){
+        window.location.replace("http://votainteligente.mx/election/eleccion-gubernamental-2016");
+    }
+};

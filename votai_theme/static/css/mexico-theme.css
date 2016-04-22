@@ -1843,13 +1843,14 @@ animation: doscaras 4s infinite;
 		z-index: 101;
 		top: 0;
 	}
-	.chosen-container-single .chosen-single {
-		margin-bottom: 20px;
+
+	.select-cand-padding{
+		margin-bottom: 30px;
 	}
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{
-		position: initial;
+		position: relative;
 	}
 	html, body{
 		padding-top: 0 !important;
@@ -1886,8 +1887,8 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
-	.chosen-container-single .chosen-single {
-		margin-bottom: 20px;
+	.select-cand-padding{
+		margin-bottom: 30px;
 	}
 }
 @media(min-width:992px){

@@ -15,7 +15,7 @@
 {% block mainelection %}
 	<div class="container-profile">
 		<div class="profile-candidate position-relative">
-				<a class="close-circle position-absolute" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}"></a>
+				<a class="close-circle position-absolute" href="{% url 'election_view' slug=election.slug %}" target="self" title="{% trans "Perfiles" %}"></a>
 			<div class="row">
 				<div class="col-md-9">
 					<div class="col-md-5 col-sm-5">
@@ -23,7 +23,7 @@
 							{% if candidate.image %}
 
 							{% thumbnail candidate.image "300x300" crop="center" as im %}
-							    <img src="{{ im.url }}" alt="{{candidate.name}}" height="300" width="300" border="0" class="img-responsive center-block">
+							    <img src="{{ im.url }}" alt="{{candidate.name}}" title="{{candidate.name}}" height="300" width="300" border="0" class="img-responsive center-block">
 							{% endthumbnail %}
 							
 							{% else %}
@@ -122,9 +122,7 @@
 										<!-- eosource -->
 									</p>
 								</div>
-								{% endfor %}
-							
-						
+								{% endfor %}						
 						{% endfor %}
 					</div>
 					{% endif %}

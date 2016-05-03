@@ -65,11 +65,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1 {
-	font-weight: 300;
-}
-
-h3 {
-	/*font-weight: 900;*/
+	font-size: 30px;
 }
 
 h3.portada {
@@ -988,6 +984,9 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 .vertical-align{
 	vertical-align: middle;
 	display: table-cell;
+}
+.no-border{
+	border: 0;
 }
 /*li.contacttwitter{
 	background: url(../img/twitter-icon.png);

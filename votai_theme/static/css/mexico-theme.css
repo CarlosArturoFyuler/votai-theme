@@ -106,6 +106,7 @@ strong {
 	padding: 40px 110px;
 	line-height: 160%;
 	margin: 0 80px;
+	text-align: justify;
 }
 .contenedor {
 	background-color: #eaedf2;

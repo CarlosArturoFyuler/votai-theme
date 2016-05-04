@@ -107,6 +107,7 @@ strong {
 	line-height: 160%;
 	margin: 0 80px;
 	text-align: justify;
+	font-size: 16px;
 }
 .contenedor {
 	background-color: #eaedf2;
@@ -1074,33 +1075,30 @@ li.vota-facebook{
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
-	background-size: 70%;
-	/*display: block;*/
+	background-size: 30px;
 }
 li.vota-facebook:hover{
-	background-position: 0 -57px;
+	background-position: 0 -61px;
 }
 li.vota-twitter{
 	background: url(../img/twitter.png) no-repeat left top;
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
-	background-size: 70%;
-	/*display: block;*/
+	background-size: 30px;
 }
 li.vota-twitter:hover{
-	background-position: 0 -55px;
+	background-position: 0 -59px;
 }
 li.vota-youtube{
 	background: url(../img/you_tube.png) no-repeat left top;
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
-	background-size: 70%;
-	/*display: block;*/
+	background-size: 30px;
 }
 li.vota-youtube:hover{
-	background-position: 0 -55px;
+	background-position: 0 -59px;
 }
 /* Footer */
 .bg-left-dotted{
@@ -1731,6 +1729,7 @@ animation: doscaras 4s infinite;
 	}
 	.no-padding{
 		padding: 0 !important;
+		width: 100%;
 	}
 	.nav li a{
 		font-family: 'Lato' sans-serif;
@@ -1764,6 +1763,40 @@ animation: doscaras 4s infinite;
 	a.purple{
 		border-color: #5562A1 !important;
 	}
+
+	li.vota-facebook{
+		display: inline-block;
+		background-size: 35px;
+	}
+	li.vota-facebook:hover{
+		background-position: 0 -71px;
+	}
+	li.vota-facebook a{
+		border-left: none;
+	}
+	li.vota-twitter{
+		display: inline-block;
+		background-size: 35px;
+	}
+	li.vota-twitter:hover{
+		background-position: 0 -69px;
+	}
+	li.vota-twitter a{
+		border-left: none;
+	}
+	li.vota-youtube{
+		display: inline-block;
+		background-size: 37px;
+	}
+	li.vota-youtube:hover{
+		background-position: 0 -73px;
+	}
+	li.vota-youtube a{
+		border-left: none;
+	}
+	.header-links{
+		text-align: center;
+	}
 	/*Menu responsive end*/
 
 	/*Footer*/
@@ -1777,6 +1810,9 @@ animation: doscaras 4s infinite;
     padding-top: 50px;
     padding-left: 12px;
 	}
+	#footer img {
+	margin-bottom: 20px;
+}
 	/*Footer end*/
 
 	/*.col-xs-center{

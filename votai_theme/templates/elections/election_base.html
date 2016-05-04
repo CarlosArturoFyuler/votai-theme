@@ -23,7 +23,7 @@
 {% endblock %}
 {% block extra_header_links %}
 	<!-- mobile version-->
-	<div class="visible-xs">
+	<div class="visible-xs text-left">
 		{% if 'profiles'|val_navbars  %}
 			<li><a class="yellow {% block tab_profile_mov %}{% endblock %}" href="{% url 'election_view' slug=election.slug %}" title="{% trans "Perfiles" %}" target="_self">{% trans "Perfiles" %}</a></li>
 		{% endif %}

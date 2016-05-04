@@ -64,7 +64,7 @@ document.body.appendChild(e);
         </div>
         <div class="collapse navbar-collapse">
             {% get_flatpages as flatpages %}
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav header-links">
                 {% for page in flatpages %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>     
                 {% endfor %}
@@ -97,11 +97,11 @@ document.body.appendChild(e);
                 <a href="http://www.ciudadanointeligente.org/" target="_blank" rel="nofollow"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
             </div>
             <div class="col-md-offset-1 col-md-2 col-sm-6 text-center">
-                <a href="http://www.ux.edu.mx/" target="_blank" rel="nofollow"><img height="49px" src="{% static 'img/logo-UX-.png' %}" alt="Universidad de Xalapa" title="Universidad de Xalapa"></a>
+                <a href="http://www.ux.edu.mx/" target="_blank" rel="nofollow"><img width="192px" src="{% static 'img/logo-UX-.png' %}" alt="Universidad de Xalapa" title="Universidad de Xalapa"></a>
             </div>
             <!--yo-->
             <div class="col-md-offset-1 col-md-1 col-sm-6 text-center">
-                <a href="http://coparmex.org.mx" target="_blank" rel="nofollow"><img height="49px" src="{% static 'img/logo_coparmex.png' %}" alt="COPARMEX" title="COPARMEX"></a>
+                <a href="http://coparmex.org.mx" target="_blank" rel="nofollow"><img height="80px" src="{% static 'img/logo_coparmex.png' %}" alt="COPARMEX" title="COPARMEX"></a>
             </div>
             <!--yo-->
             <div class="clearfix visible-sm"></div>

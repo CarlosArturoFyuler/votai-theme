@@ -100,7 +100,11 @@ strong {
 	border-radius: 6px;
 	padding: 10px;
 }
-
+.fondo-blanco2 {
+	background: #fff;
+	border-radius: 6px;
+	padding: 10px 120px;
+}
 .contenedor {
 	background-color: #eaedf2;
 }
@@ -1062,7 +1066,39 @@ li.contactface{
 .navbar-toggle{
 	margin-top: 4%;
 }
-
+li.vota-facebook{
+	background: url(../img/facebook.png) no-repeat left top;
+	height: 40px;
+	width: 40px;
+	margin-top: 17px;
+	background-size: 70%;
+	/*display: block;*/
+}
+li.vota-facebook:hover{
+	background-position: 0 -57px;
+}
+li.vota-twitter{
+	background: url(../img/twitter.png) no-repeat left top;
+	height: 40px;
+	width: 40px;
+	margin-top: 17px;
+	background-size: 70%;
+	/*display: block;*/
+}
+li.vota-twitter:hover{
+	background-position: 0 -55px;
+}
+li.vota-youtube{
+	background: url(../img/you_tube.png) no-repeat left top;
+	height: 40px;
+	width: 40px;
+	margin-top: 17px;
+	background-size: 70%;
+	/*display: block;*/
+}
+li.vota-youtube:hover{
+	background-position: 0 -55px;
+}
 /* Footer */
 .bg-left-dotted{
 	background-image: url(../img/textura_dizq_footer.png);

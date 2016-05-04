@@ -69,7 +69,10 @@ document.body.appendChild(e);
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>     
                 {% endfor %}
                 {% block extra_header_links %}{% endblock %}
-                {# block que_es_vota #}{# endblock #}
+                {% block que_es_vota %}{% endblock %}
+                <li class="vota-facebook"><a href="https://www.facebook.com/VotaInteligenteMX/" title="Facebook Vota Inteligente Mx" target="_blank" rel="nofollow"></a></li>
+                <li class="vota-twitter"><a href="https://twitter.com/votaimx" title="Twitter Vota Inteligente Mx" target="_blank" rel="nofollow"></a></li>
+                <li class="vota-youtube"><a href="https://www.youtube.com/channel/UCsR3nsQkaoiBKoP4H-8wYtg" title="Youtube Vota Inteligente Mx" target="_blank" rel="nofollow"></a></li>
             </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -92,9 +95,14 @@ document.body.appendChild(e);
                 </ul>-->
                 <a href="http://www.ciudadanointeligente.org/" target="_blank" rel="nofollow"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
             </div>
-            <div class="col-md-offset-1 col-md-4 col-sm-6 text-center">
-                <a href="http://www.ux.edu.mx/" target="_blank" rel="nofollow"><img height="49px" src="{% static 'img/UX.png' %}" alt="Universidad de Xalapa" title="Universidad de Xalapa"></a>
+            <div class="col-md-offset-1 col-md-2 col-sm-6 text-center">
+                <a href="http://www.ux.edu.mx/" target="_blank" rel="nofollow"><img height="49px" src="{% static 'img/logo-UX-.png' %}" alt="Universidad de Xalapa" title="Universidad de Xalapa"></a>
             </div>
+            <!--yo-->
+            <div class="col-md-offset-1 col-md-1 col-sm-6 text-center">
+                <a href="http://www.ux.edu.mx/" target="_blank" rel="nofollow"><img height="49px" src="{% static 'img/logo_coparmex.png' %}" alt="COPARMEX" title="Universidad de Xalapa"></a>
+            </div>
+            <!--yo-->
             <div class="clearfix visible-sm"></div>
             <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1">
                 <ul>

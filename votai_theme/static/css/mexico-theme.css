@@ -103,7 +103,9 @@ strong {
 .fondo-blanco2 {
 	background: #fff;
 	border-radius: 6px;
-	padding: 10px 120px;
+	padding: 40px 110px;
+	line-height: 160%;
+	margin: 0 80px;
 }
 .contenedor {
 	background-color: #eaedf2;
@@ -367,7 +369,7 @@ input, button, select, textarea {
 .nav-candidator .list-inline>li.active a, .nav-candidator .list-inline>li:hover a {
 	color: #596072;
 	position: relative;
-	font-family: 'Lato-bold', sans-serif;
+	font-weight: bold;
 }
 
 .nav-candidator .list-inline>li.active a:after {

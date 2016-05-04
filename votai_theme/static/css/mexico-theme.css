@@ -1060,7 +1060,7 @@ li.contactface{
 .quienes {
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
-	margin: 22px 0;
+	margin: 22px 0 5px;
 	color: white;
 	padding-left: 2px;
 	border-left: solid 1px;
@@ -1071,34 +1071,40 @@ li.contactface{
 	margin-top: 4%;
 }
 li.vota-facebook{
-	background: url(../img/facebook.png) no-repeat left top;
+	background: url(../img/facebook.png) no-repeat top;
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
 	background-size: 30px;
 }
 li.vota-facebook:hover{
-	background-position: 0 -61px;
+	background-position: center -61px;
 }
 li.vota-twitter{
-	background: url(../img/twitter.png) no-repeat left top;
+	background: url(../img/twitter.png) no-repeat top;
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
 	background-size: 30px;
 }
 li.vota-twitter:hover{
-	background-position: 0 -59px;
+	background-position: center -59px;
 }
 li.vota-youtube{
-	background: url(../img/you_tube.png) no-repeat left top;
+	background: url(../img/you_tube.png) no-repeat top;
 	height: 40px;
 	width: 40px;
 	margin-top: 17px;
 	background-size: 30px;
 }
 li.vota-youtube:hover{
-	background-position: 0 -59px;
+	background-position: center -59px;
+}
+#ux{
+	height: 49px;
+}
+#coparmex{
+	height: 51px;
 }
 /* Footer */
 .bg-left-dotted{
@@ -1725,7 +1731,7 @@ animation: doscaras 4s infinite;
 		border-color: #363D4D !important;
 	}
 	.nav li{
-		padding: 12px 8%; 
+		padding: 12px 27px; 
 	}
 	.no-padding{
 		padding: 0 !important;
@@ -1745,7 +1751,7 @@ animation: doscaras 4s infinite;
 	.quienes{
 		border-left: none !important;
 		padding-top: 40px !important;
-		padding-bottom: 15px !important;
+		padding-bottom: 0 !important;
 	}
 	
 	.navbar-collapse.in {
@@ -1769,7 +1775,7 @@ animation: doscaras 4s infinite;
 		background-size: 35px;
 	}
 	li.vota-facebook:hover{
-		background-position: 0 -71px;
+		background-position: center -71px;
 	}
 	li.vota-facebook a{
 		border-left: none;
@@ -1779,7 +1785,7 @@ animation: doscaras 4s infinite;
 		background-size: 35px;
 	}
 	li.vota-twitter:hover{
-		background-position: 0 -69px;
+		background-position: center -69px;
 	}
 	li.vota-twitter a{
 		border-left: none;
@@ -1789,13 +1795,14 @@ animation: doscaras 4s infinite;
 		background-size: 37px;
 	}
 	li.vota-youtube:hover{
-		background-position: 0 -73px;
+		background-position: center -73px;
 	}
 	li.vota-youtube a{
 		border-left: none;
 	}
 	.header-links{
 		text-align: center;
+		padding-bottom: 15px;
 	}
 	/*Menu responsive end*/
 
@@ -1811,13 +1818,15 @@ animation: doscaras 4s infinite;
     padding-left: 12px;
 	}
 	#footer img {
-	margin-bottom: 20px;
-}
+		margin-bottom: 20px;
+	}
+	#ux{
+		width: 192px;
+	}
+	#coparmex{
+		height: 80px;
+	}
 	/*Footer end*/
-
-	/*.col-xs-center{
-		text-align: center;
-	}*/
 	/* candidates*/
 	.center-block{
     	margin: 0 auto;

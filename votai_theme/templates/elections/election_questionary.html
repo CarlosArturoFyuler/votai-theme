@@ -33,7 +33,7 @@
 								<!--<i class="icon-quote-left"></i>--> <span class="respuesta vertical-align">"{{position.label}}"</span> <!--<i class="icon-quote-right"></i>-->
 							</div>
 							<div class="col-md-3">
-								<ul class="list-inline text-center">
+								<ul class="list-inline text-center padding-left-10">
 								{% for taken_position in position.taken_positions.all %}
 									<li>
 									{% with candidate=taken_position.person %}
@@ -86,5 +86,7 @@
 		{% endfor %}
 	</div>
 </div>
-
+<p>
+*Las respuestas anteriores fueron recuperadas a partir de un ejercicio de revisión de las plataformas electorales, declaraciones en medios de comunicación, entrevistas y debates en los que han participado los candidatos. Cualquier comentario, aclaración o cambio de contenido de las mismas favor de enviar un correo a votainteligentemx@gmail.com
+</p>
 {% endblock mainelection %}

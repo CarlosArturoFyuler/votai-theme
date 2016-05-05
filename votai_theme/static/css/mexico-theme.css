@@ -1102,9 +1102,16 @@ li.vota-youtube:hover{
 }
 #ux{
 	height: 49px;
+	padding-left: 10px;
 }
 #coparmex{
-	height: 51px;
+	height: 53px;
+	padding-right: 13px;
+}
+#ciudadano-logo{
+	/*width: 201px;
+	height: 60px;*/
+	height: 53px;
 }
 /* Footer */
 .bg-left-dotted{
@@ -1136,7 +1143,7 @@ li.vota-youtube:hover{
 	font-size: 20px;
 }
 .email-centered{
-	padding-left: 2em;
+	/*padding-left: 2em;*/
 }
 
 
@@ -1709,7 +1716,6 @@ animation: doscaras 4s infinite;
 	.navbar-nav {
 		margin: 0 !important;
 		float: left;
-		/*padding: 0px 8%;*/
 		width: 100%;
 		padding-top: 20px;
 	}
@@ -1724,7 +1730,7 @@ animation: doscaras 4s infinite;
 		background-repeat: no-repeat;
 		background-position: 98.5% 95%;
 		background-size: 80px;
-
+		max-height: none !important;
 	}
 	.navbar-inverse .navbar-toggle {
 		/* border-color: #333; */
@@ -1808,23 +1814,37 @@ animation: doscaras 4s infinite;
 
 	/*Footer*/
 	.bg-right-dotted {
-    background-image: url(../img/iphone_textura_der_footer.png);
+    background-image: url(../img/textura_derecha_mov.png);
 	}
 	.bg-left-dotted {
-    background-image: url(../img/iphone_textura_izq_footer.png);
+    background-image: url(../img/textura_izquierda_mov.png);
 	}
 	#footer ul {
-    padding-top: 50px;
-    padding-left: 12px;
+	    padding-top: 10px;
+	    /*padding-left: 12px;*/
+	    /*padding-left: 23%;*/
+	    /*margin: 0 auto !important;
+	    padding: 0 !important;*/
 	}
 	#footer img {
 		margin-bottom: 20px;
 	}
 	#ux{
-		width: 192px;
+		/*width: 192px;*/
+		height: 43px;
 	}
 	#coparmex{
-		height: 80px;
+		/*height: 70px;*/
+		margin-left: 20px;
+	}
+	#ciudadano-logo{
+		margin-left: 28px;
+	}
+	#footer-list{
+		margin-bottom: -12px;
+	}
+	.email-centered{
+		padding-right: 53px;
 	}
 	/*Footer end*/
 	/* candidates*/
@@ -1930,6 +1950,14 @@ animation: doscaras 4s infinite;
 	.select-cand-padding{
 		margin-bottom: 30px;
 	}
+	.fondo-blanco2{
+		margin: 0 auto !important;
+		padding: 5px 10px;
+		text-align: left;
+	}
+	.fondo-blanco2 h2{
+		font-size: 22px;
+	}
 }
 @media screen and (orientation:landscape) and (max-width: 767px){
 	.navbar-fixed-top, .navbar-fixed-bottom{
@@ -1960,6 +1988,9 @@ animation: doscaras 4s infinite;
 		margin-bottom: 20px;
 		font-size: 16px;
 	}
+	.email-centered{
+		padding-right: 53px;
+	}
 }
 @media(min-width:768px){
 	.center-block{
@@ -1979,9 +2010,17 @@ animation: doscaras 4s infinite;
 }
 @media(min-width:1200px){
 	#election{
-	/*width:878px;*/
-	width:85%;
-	margin:0 auto;
+		width:85%;
+		margin:0 auto;
+	}
+	#ux{
+		padding-left: 15px;
+	}
+	#coparmex{
+		margin-left: -30px;
+	}
+	.email-centered{
+		padding-right: 53px;
 	}
 }
 

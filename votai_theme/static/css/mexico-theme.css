@@ -1109,19 +1109,7 @@ li.vota-youtube{
 li.vota-youtube:hover{
 	background-position: center -59px;
 }
-#ux{
-	height: 49px;
-	padding-left: 10px;
-}
-#coparmex{
-	height: 53px;
-	padding-right: 13px;
-}
-#ciudadano-logo{
-	/*width: 201px;
-	height: 60px;*/
-	height: 53px;
-}
+
 /* Footer */
 .bg-left-dotted{
 	background-image: url(../img/textura_dizq_footer.png);
@@ -1245,14 +1233,6 @@ li.vota-youtube:hover{
 	border-right: none;
 }
 
-.profile-candidate .table tbody>tr>td span {
-	/*opacity: 0.8;
-	font-weight: 300;
-	color: #565D6D;
-	font-family:'Lato-light', sans-serif; 
-	font-size: 17*/
-}
-
 .profile-candidate-font{
 	font-size: 17px;
 	font-family: 'Lato-light', sans-serif;
@@ -1291,6 +1271,20 @@ li.vota-youtube:hover{
 
 .panel {
 	border-radius: 6px;
+}
+
+#ux{
+	height: 45px;
+	padding-left: 10px;
+}
+#coparmex{
+	height: 66px;
+	padding-right: 13px;
+}
+#ciudadano-logo{
+	/*width: 201px;
+	height: 60px;*/
+	height: 51px;
 }
 
 /*Ranking*/
@@ -1821,7 +1815,7 @@ animation: doscaras 4s infinite;
 	}
 	/*Menu responsive end*/
 
-	/*Footer*/
+	/*Footer responsive*/
 	.bg-right-dotted {
     background-image: url(../img/textura_derecha_mov.png);
 	}
@@ -1840,14 +1834,17 @@ animation: doscaras 4s infinite;
 	}
 	#ux{
 		/*width: 192px;*/
-		height: 43px;
+		/*height: 43px;*/
+		height: 33px;
 	}
 	#coparmex{
 		/*height: 70px;*/
-		margin-left: 20px;
+		height: 56px;
+		margin-left: 28px;
 	}
 	#ciudadano-logo{
 		margin-left: 28px;
+		height: 41px;
 	}
 	#footer-list{
 		margin-bottom: -12px;
@@ -2013,6 +2010,9 @@ animation: doscaras 4s infinite;
 	.select-cand-padding{
 		margin-bottom: 30px;
 	}
+	#footer img {
+		margin-bottom: 10px;
+	}
 }
 @media(min-width:992px){
 	
@@ -2027,6 +2027,9 @@ animation: doscaras 4s infinite;
 	}
 	#coparmex{
 		margin-left: -30px;
+	}
+	#ciudadano-logo{
+		margin-right: -80px;
 	}
 	.email-centered{
 		padding-right: 53px;

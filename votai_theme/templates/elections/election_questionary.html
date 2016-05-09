@@ -19,8 +19,8 @@
 			<div class="panel-body">
 				{% for topic in category.topics.all %}
 				<div class="question-answer {% if forloop.last %}no-border{% endif %}">
-					<div class="row">
-						<p class="pregunta col-md-9">
+					<div class="row no-margin-sm">
+						<p class="pregunta col-md-12">
 						{{topic.label}}
 						</p>
 					</div>
@@ -65,7 +65,7 @@
 								{% for taken_position in position.taken_positions.all %}
 									{% with candidate=taken_position.person %}
 										{% if forloop.first %}
-											<a class="grey-font" href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" target="_self"><h5>{{candidate.name}}</h5></a>
+											<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" target="_self"><h5>{{candidate.name}}</h5></a>
 										{% elif forloop.last %}
 											{% trans "y" %} <a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" target="_self"><h5>{{candidate.name}}</h5></a>
 										{% else %}

@@ -70,11 +70,11 @@ $(document).ready(function(){
 				{% for topic in category.topics.all %}
 				<div class="row">
 					<div class="col-md-12">
-					<p class="question">{{topic.label}}</p>
+					<p class="pregunta">{{topic.label}}</p>
 						<ul class="list-unstyled">
 							{% for position in topic.positions.all %}
 							<li>
-								<label for="answer-{{topic.id}}-{{position.id}}" class="display-table2"><input name="answer-{{topic.id}}" value="{{position.id}}" id="answer-{{topic.id}}-{{position.id}}" type="radio" class="display-tablecell"> <span class="answer-option display-tablecell">{{position.label}}</span></label>
+								<label for="answer-{{topic.id}}-{{position.id}}" class="display-table2"><input name="answer-{{topic.id}}" value="{{position.id}}" id="answer-{{topic.id}}-{{position.id}}" type="radio" class="display-tablecell"> <span class="answer-option display-tablecell respuesta">{{position.label}}</span></label>
 							</li>
 							{% endfor %}
 						</ul>

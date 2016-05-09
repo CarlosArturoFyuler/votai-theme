@@ -611,7 +611,7 @@ input, button, select, textarea {
 }
 
 .question-answer {
-	margin-top: 34px;
+	margin-top: 20px;
 	background-color: #fff;
 	padding-bottom: 20px;
 	border-bottom: 1px dashed #637575;
@@ -619,14 +619,6 @@ input, button, select, textarea {
 	-moz-border-radius: 5px;
 	border-radius: 5px;*/
 }
-
-.question {
-	/*font-weight: 900;*/
-	font-family: 'Lato-bold', sans-serif;
-	font-size: 18px;
-	color: #444A5A;
-}
-
 
 .icon-quote-left, .icon-quote-right {
 	color: #9fa7b4;
@@ -650,6 +642,7 @@ input, button, select, textarea {
 	font-family: 'Lato', sans-serif;
 	color: #444A5A;
 	font-size: 16px;
+	font-weight: normal !important;
 }
 .open-close{
 	position: absolute;
@@ -972,8 +965,7 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 }
 
 .panel-body{
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 10px 50px;
 }
 .padding-left-10{
 	padding-left: 10px;
@@ -1937,6 +1929,7 @@ animation: doscaras 4s infinite;
 	}
 	.pregunta{
 		font-size: 13px;
+		padding-left: 0;
 	}
 	.respuesta{
 		font-size: 13px;
@@ -1963,6 +1956,13 @@ animation: doscaras 4s infinite;
 	}
 	.fondo-blanco2 h2{
 		font-size: 22px;
+	}
+	/* Cuest media naranja responsive*/
+	.panel-body{ 
+		padding:5px 8px;
+	}
+	.no-margin-sm{
+		margin:0 auto !important;
 	}
 }
 @media screen and (orientation:landscape) and (max-width: 767px){

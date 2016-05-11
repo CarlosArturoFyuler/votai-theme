@@ -33,7 +33,7 @@
               screenwidth = $(".containerAccordion").width();
               $('#gridaccordion-{{forloop.counter}}').gridAccordion({ 
                 width:screenwidth, height:250, columns:{{ featured_election.candidates.all|length }}, 
-                distance:2, closedPanelWidth:10, closedPanelHeight:10, alignType:'centerCenter', linkTarget: "_self", slideshow:false 
+                distance:2, closedPanelWidth:10, closedPanelHeight:10, alignType:'centerCenter', linkTarget: "_self", slideshow:true, stopSlideshowOnHover: false 
               });
             });
             </script>

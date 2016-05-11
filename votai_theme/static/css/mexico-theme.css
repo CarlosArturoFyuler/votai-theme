@@ -323,7 +323,6 @@ input, button, select, textarea {
 
 .navbar-inverse .navbar-nav>li>a {
 	color: #FFF;
-	margin-left: -17px; /*VOUYOU*/
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -1804,6 +1803,9 @@ animation: doscaras 4s infinite;
 	.header-links{
 		text-align: center;
 		padding-bottom: 15px;
+	}
+	.navbar-inverse .navbar-nav>li>a {
+		margin-left: -17px; /*VOUYOU*/
 	}
 	/*Menu responsive end*/
 

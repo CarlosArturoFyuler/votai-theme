@@ -1277,6 +1277,9 @@ li.vota-youtube:hover{
 	height: 60px;*/
 	height: 51px;
 }
+#acropolis{
+	height: 35px;
+}
 
 /*Ranking*/
 
@@ -1829,7 +1832,7 @@ animation: doscaras 4s infinite;
 	#ux{
 		/*width: 192px;*/
 		/*height: 43px;*/
-		height: 33px;
+		height: 25px;
 	}
 	#coparmex{
 		/*height: 70px;*/
@@ -1839,6 +1842,9 @@ animation: doscaras 4s infinite;
 	#ciudadano-logo{
 		margin-left: 28px;
 		height: 41px;
+	}
+	#acropolis{
+		height: 25px;
 	}
 	#footer-list{
 		margin-bottom: -12px;
@@ -2017,6 +2023,24 @@ animation: doscaras 4s infinite;
 	}
 }
 @media(min-width:992px){
+	#coparmex{
+		margin-left: 35px;
+	}
+	#ux{
+		margin-left: 30px;
+	}
+	#acropolis{
+		margin-left: 35px;	
+	}
+	#footer-list{
+		margin-left: 52px;
+	}
+	.email-centered{
+		padding-right: 45px;
+	}
+	#ciuda-first{
+		margin-left: 35px;
+	}
 	
 }
 @media(min-width:1200px){
@@ -2025,16 +2049,19 @@ animation: doscaras 4s infinite;
 		margin:0 auto;
 	}
 	#ux{
-		padding-left: 15px;
+		margin-left: 40px;
 	}
 	#coparmex{
-		margin-left: -30px;
+		margin-left: 35px;
 	}
 	#ciudadano-logo{
 		margin-right: -80px;
 	}
 	.email-centered{
-		padding-right: 53px;
+		padding-right: 25px;
+	}
+	#ciuda-first{
+		margin-left: 35px;
 	}
 }
 

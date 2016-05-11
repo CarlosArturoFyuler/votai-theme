@@ -33,7 +33,7 @@
               screenwidth = $(".containerAccordion").width();
               $('#gridaccordion-{{forloop.counter}}').gridAccordion({ 
                 width:screenwidth, height:250, columns:{{ featured_election.candidates.all|length }}, 
-                distance:2, closedPanelWidth:10, closedPanelHeight:10, alignType:'centerCenter', linkTarget: "_self", slideshow:true, stopSlideshowOnHover: false 
+                distance:2, closedPanelWidth:10, closedPanelHeight:10, alignType:'centerCenter', linkTarget: "_self", slideshow:true, stopSlideshowOnHover: true, slideDuration: 400, slideshowDelay: 5e3, shuffle: false, captionWidth: 300,captionHeight: 100,captionTop: 205, captionLeft: 30, closePanelOnMouseOut: false
               });
             });
             </script>

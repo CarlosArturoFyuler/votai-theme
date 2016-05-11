@@ -1265,20 +1265,21 @@ li.vota-youtube:hover{
 }
 
 #ux{
-	height: 45px;
+	/*height: 45px;*/
+	height: 40px;
 	padding-left: 10px;
 }
 #coparmex{
-	height: 66px;
+	height: 61px;
 	padding-right: 13px;
 }
 #ciudadano-logo{
 	/*width: 201px;
 	height: 60px;*/
-	height: 51px;
+	height: 46px;
 }
 #acropolis{
-	height: 35px;
+	height: 30px;
 }
 
 /*Ranking*/
@@ -2030,10 +2031,7 @@ animation: doscaras 4s infinite;
 		margin-left: 30px;
 	}
 	#acropolis{
-		margin-left: 35px;	
-	}
-	#footer-list{
-		margin-left: 52px;
+		margin-left: 15px;	
 	}
 	.email-centered{
 		padding-right: 45px;

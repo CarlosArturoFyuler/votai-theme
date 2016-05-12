@@ -265,10 +265,6 @@ strong {
 
 /*Botones*/
 
-.btn {
-	/*font-weight: 300;*/
-}
-
 .btn-lg {
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
@@ -278,6 +274,11 @@ strong {
 }
 .textbtn{
 	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.textbtn-election-detail{
+	padding-left: 21px;
 	vertical-align: middle;
 }
 
@@ -312,6 +313,11 @@ strong {
 
 .btn-danger:hover {
 	background-color: #af373c;
+	border-color: transparent;
+}
+
+.btn-info{
+	background-color: ##3ee0cb;
 	border-color: transparent;
 }
 

@@ -1833,7 +1833,7 @@ animation: doscaras 4s infinite;
 	#ux{
 		/*width: 192px;*/
 		/*height: 43px;*/
-		height: 25px;
+		height: 30px;
 	}
 	#coparmex{
 		/*height: 70px;*/
@@ -2004,7 +2004,7 @@ animation: doscaras 4s infinite;
 		font-size: 16px;
 	}
 	.email-centered{
-		padding-right: 53px;
+		padding-right: 20px;
 	}
 }
 @media(min-width:768px){
@@ -2034,7 +2034,7 @@ animation: doscaras 4s infinite;
 		margin-left: 15px;	
 	}
 	.email-centered{
-		padding-right: 45px;
+		padding-right: 40px;
 	}
 	#ciuda-first{
 		margin-left: 35px;

@@ -136,8 +136,7 @@
 					{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
 							<button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='{% url 'face_to_face_one_candidate_detail_view' slug=election.slug slug_candidate_one=candidate.id %}'"><i class="icon-bolt fa-2x textbtn"></i> <span class="textbtn">{% trans "Compáralo" %}</span></button>
 							{% endif %}
-							{% include 'elections/candidates/contacts.html' with candidate=candidate %}
-							
+							{% include 'elections/candidates/contacts.html' with candidate=candidate %}	
 					</div>
 				</div>
 			</div>

@@ -46,7 +46,7 @@
 											<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}"><img src="{{im.url}}"  height="70" width="70" alt="{{candidate.name}}" border="0" class="img-responsive img-circle" title="{{candidate.name}}"></a>
 											{% endthumbnail %}
 										{% endif %}
-										<span>{{candidate.given_name}}</span>
+										<span>{{candidate.additional_name}}</span>
 									{% endwith %}
 									</li>
 								{% endfor %}

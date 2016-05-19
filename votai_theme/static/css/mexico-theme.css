@@ -1869,6 +1869,9 @@ animation: doscaras 4s infinite;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+	.textbtn-election-detail{
+		padding-left: 40px;
+	}
 	/* candidates end*/
 	/* home */
 	.text-center.intro-home {

@@ -9,7 +9,7 @@
 {% block url_face_to_face %}{% url 'face_to_face_one_candidate_detail_view' slug=election.slug slug_candidate_one=candidate.id %}{% endblock url_face_to_face %}
 
 {% block title %} - {{election}} - {{candidate.name}}{% endblock title%}
-
+{% block description %}{{election.description|truncatewords:100}} - {{candidate.name}}{% endblock description %}
 {% block tab_profile %}class="active"{% endblock %}
 {% block tab_profile_mov %}active-mov{% endblock %}
 {% block mainelection %}

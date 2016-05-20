@@ -22,7 +22,7 @@
 <meta property="og:description" content="{{ 'description'|ogpdata }}">
 <meta property="og:site_name" content="{{ 'site_name'|ogpdata }}">
 
-<link rel="canonical" href="{% block canonical_url %}{% endblock %}">
+<link rel="canonical" href="{{ request.build_absolute_uri }}">
 <!--eoff-->
 <link rel="shortcut icon" sizes="196x196" href="{% static 'img/favicon.png' %}">
 <!-- Browser out of date -->

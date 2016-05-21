@@ -18,16 +18,14 @@
 </ul>-->
 <ul class="list-unstyled padding-list">
     {% for contact_detail in candidate.contact_details.all %}       
-            <a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">
                 {% if contact_detail.contact_type == "TWITTER" %}
-                    <li class="contacttwitter">{{contact_detail.label}}</li>
+                    <li class="contacttwitter"><a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">{{contact_detail.label}}</a></li>
                 {% endif %}
                 {% if contact_detail.contact_type == "FACEBOOK" %}
-                    <li class="contactface">{{contact_detail.label}}</li>
+                    <li class="contactface"><a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">{{contact_detail.label}}</a></li>
                 {% endif %}
                 {% if contact_detail.contact_type == "URL" %}
-                    <li class="contactweb">{{contact_detail.label}}</li>
+                    <li class="contactweb"><a href="{{contact_detail.value}}" class="social-link-candidate" target="_blank">{{contact_detail.label}}</a></li>
                 {% endif %}                
-            </a>         
     {% endfor %}
 </ul>

@@ -596,10 +596,6 @@ input, button, select, textarea {
 	padding-bottom: 5px;
 }
 
-.social-link-candidate {
-	color: #FFF;
-}
-
 .container-candidates p {
 	background: #fff;
 	padding: 5px;
@@ -1020,11 +1016,9 @@ li.contacttwitter{
 	background: url(../img/twitter-icon.png) no-repeat left top;
 	height: 20px;
 	width: 20px;
-	padding-left: 25px;
+	padding: 0;
 	margin-bottom: 10px;
-	/*padding-right: 100%;*/
-	background-size: 70%;
-	display: block;
+	background-size: 90%;
 	/*border-style: solid;
     border-width: 5px;*/
 }
@@ -1036,27 +1030,21 @@ li.contactweb{
 	background: url(../img/URL-icon.png) no-repeat left top;
 	height: 20px;
 	width: 19px;
-	padding-left: 27px;
-	/*padding-right: 100%;*/
-	background-size: 70%;
+	background-size: 90%;
 	margin-bottom: 10px;
-	display: block;
 }
 .contactweb:hover{
-	background-position: 0 -34px;
+	background-position: 0 -30px;
 }
 li.contactface{
 	background: url(../img/facebook-icon.png) no-repeat left top;
 	height: 18px;
 	width: 18px;
-	padding-left: 27px;
-	background-size: 70%;
-	/*padding-right: 100%;*/
+	background-size: 95%;
 	margin-bottom: 10px;
-	display: block;
 }
 .contactface:hover{
-	background-position: 0 -34px;
+	background-position: 0 -30px;
 }
 .padding-list{
 	padding-top: 25px;
@@ -1254,7 +1242,8 @@ li.vota-youtube:hover{
 	color: #6A706E;
 	font-family: 'Lato-light', sans-serif;
 	font-size: 13.6px;
-
+	display: block;
+	padding-left: 25px;
 }
 
 .social-link-candidate:hover {

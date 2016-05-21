@@ -39,7 +39,7 @@
 									{% with candidate=taken_position.person %}
 										{% if candidate.image %}
 											{% thumbnail candidate.image "100x100" crop="center" as im %}
-											<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" target="_self"><img src="{{im.url}}" height="70" width="70" alt="{{candidate.name}}" border="0" class="img-responsive img-circle" title="{{candidate.name}}"></a>
+											<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" target="_self"><img src="{{im.url}}" height="70" width="70" alt="{{candidate.name}}" class="img-responsive img-circle" title="{{candidate.name}}"></a>
 											{% endthumbnail %}
 										{% else %}
 											{% thumbnail "http://votainteligente.cl/static/img/candidate-default.jpg" "100x100" crop="center" as im %}
@@ -87,6 +87,7 @@
 	</div>
 </div>
 <hr>
+<p>
 *Las respuestas anteriores fueron recuperadas a partir de un ejercicio de revisión de las plataformas electorales, declaraciones en medios de comunicación, entrevistas y debates en los que han participado los candidatos. Cualquier comentario, aclaración o cambio de contenido de las mismas favor de enviar un correo a votainteligentemx@gmail.com
 </p>
 {% endblock mainelection %}

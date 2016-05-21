@@ -24,7 +24,7 @@
 		{% endif %}
 		<div class="col-md-6 select-cand-padding">
 			<select data-placeholder="{% trans "Selecciona un candidato" %}" name="candidate_one" id="candidate_one" class="chosen-select" style="width:100%">
-				<option value=""></option>
+				<!--<option value=""></option>-->
 				{% for candidato in election.candidates.all %}
 					{% if second_candidate.id != candidato.id %}
 				<option value="{{candidato.id}}" {% if candidato.id and candidato.id == first_candidate.id %}selected="selected"{% endif %}>{{candidato.name}}</option>

@@ -1275,9 +1275,9 @@ li.vota-youtube:hover{
 	height: 60px;*/
 	height: 46px;
 }
-#acropolis{
+/*#acropolis{
 	height: 30px;
-}
+}*/
 
 /*Ranking*/
 
@@ -1841,9 +1841,9 @@ animation: doscaras 4s infinite;
 		margin-left: 28px;
 		height: 41px;
 	}
-	#acropolis{
+	/*#acropolis{
 		height: 25px;
-	}
+	}*/
 	#footer-list{
 		margin-bottom: -12px;
 	}
@@ -2024,7 +2024,7 @@ animation: doscaras 4s infinite;
 	}
 }
 @media(min-width:992px){
-	#coparmex{
+	/*#coparmex{
 		margin-left: 35px;
 	}
 	#ux{
@@ -2032,7 +2032,7 @@ animation: doscaras 4s infinite;
 	}
 	#acropolis{
 		margin-left: 15px;	
-	}
+	}*/
 	.email-centered{
 		padding-right: 40px;
 	}
@@ -2046,21 +2046,21 @@ animation: doscaras 4s infinite;
 		width:85%;
 		margin:0 auto;
 	}
-	#ux{
-		margin-left: 40px;
+	/*#ux{
+		margin-left: -40px;
 	}
 	#coparmex{
-		margin-left: 35px;
-	}
-	#ciudadano-logo{
+		margin-left: -35px;
+	}*/
+	/*#ciudadano-logo{
 		margin-right: -80px;
-	}
+	}*/
 	.email-centered{
 		padding-right: 25px;
 	}
-	#ciuda-first{
+	/*#ciuda-first{
 		margin-left: 35px;
-	}
+	}*/
 }
 
 .explanation-container {

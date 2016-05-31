@@ -23,8 +23,9 @@
 				
 			<p class="text-center candi-name-center">
 				<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.id %}" class="lato-font-grey-candidatename" target="_self">{{candidate.given_name}} <br> {{candidate.family_name}}<br></a>
-					{# if not candidate.has_answered #}{% no_ha_respondido_twitter_button %}{# endif #}
+					{# if not candidate.has_answered #}{# endif #}
 					<!--MYCONF-->
+					{% if candidate.given_name != "Juan" %}{% no_ha_respondido_twitter_button %}{% endif %}
 			</p>
 			</div>
 			{% if forloop.counter|divisibleby:4 %}

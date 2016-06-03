@@ -1858,8 +1858,12 @@ animation: doscaras 4s infinite;
 	.candi-name-center{
 		max-width: 314px;
 		margin: 0 auto;
-		margin-bottom: 10px;
 	}
+	
+	#margin-bottom-div{
+		margin-bottom: 40px;
+	}
+
 	.textbtn-election-detail{
 		padding-left: 40px;
 	}

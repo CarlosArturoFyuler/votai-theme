@@ -1849,6 +1849,7 @@ animation: doscaras 4s infinite;
 	}
 	.email-centered{
 		padding-right: 53px;
+		margin-bottom: 15px;
 	}
 	/*Footer end*/
 	/* candidates*/
@@ -1861,7 +1862,7 @@ animation: doscaras 4s infinite;
 	}
 	
 	#margin-bottom-div{
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 	}
 
 	.textbtn-election-detail{
